@@ -13,7 +13,7 @@ public class Menu {// Clase la nombramos como Menu
 
     private String Seccion;// Seccion de cada objeto Seccion
     private String nombrePlato;// nombrePlato de cada objeto Seccion
-    private double precio;// precio de cada objeto Seccion
+    private String precio;// precio de cada objeto Seccion
 
     @Override
     public String toString() {// nos sirve para enviar datos directamente al la clase principal
@@ -28,7 +28,7 @@ public class Menu {// Clase la nombramos como Menu
         this.nombrePlato = nombrePlato;//nombrePlato adopta el valor que contenga nombrePlato
     }//cierre de la clase
 
-    public void setPrecio(double precio) {//metodo para establecer el precio
+    public void setPrecio(String precio) {//metodo para establecer el precio
         this.precio = precio;//precio adopta el valor que contenga precio
     }//cierre de la clase
 
@@ -40,7 +40,7 @@ public class Menu {// Clase la nombramos como Menu
         return nombrePlato;
     }//cierre de la clase
 
-    public double getPrecio() {//metodo para obtener el Precio del objeto Seccion
+    public String getPrecio() {//metodo para obtener el Precio del objeto Seccion
         return precio;
     }//cierre de la clase
 
