@@ -37,7 +37,7 @@ public class Principal {//clase con nombre Principal
                     System.out.println("Ruc: ");
                     System.out.println("Telefono: ");
 
-                    System.out.println("================= ");
+                    
 
                     Scanner scn = new Scanner(System.in);// creo un objeto (instanciar Scanner) 
                     Cliente cliente = new Cliente();//creo un objeto (intanciar Cliente)
@@ -60,6 +60,7 @@ public class Principal {//clase con nombre Principal
                     System.out.println("");
                     System.out.println("================= ");
                     System.out.println(cliente.toString());//impime los datos directamente
+                    System.out.println(".toString");
                     System.out.println("================= ");
                     System.out.println("");
                     break;
@@ -73,7 +74,7 @@ public class Principal {//clase con nombre Principal
                     System.out.println("Cedula: ");
                     System.out.println("Codigo: ");
 
-                    System.out.println("================= ");
+                    
 
                     Scanner sn = new Scanner(System.in);// creo un objeto (instanciar Scanner)
                     String nom = sn.nextLine();//nos permite leer un dato de tipo String
@@ -97,6 +98,7 @@ public class Principal {//clase con nombre Principal
                     System.out.println("");
                     System.out.println("================= ");
                     System.out.println(empleado.toString());//imprime los datos ingresados directamente 
+                    System.out.println(".toString");
                     System.out.println("================= ");
                     System.out.println("");
                     break;
@@ -145,6 +147,7 @@ public class Principal {//clase con nombre Principal
                     System.out.println("");
                     System.out.println("================= ");
                     System.out.println(factura.toString());//imprime los datos ingresados directamente
+                    System.out.println(".toString");
                     System.out.println("================= ");
                     System.out.println("");
                     break;
@@ -177,6 +180,7 @@ public class Principal {//clase con nombre Principal
                     System.out.println("");
                     System.out.println("================= ");
                     System.out.println(menu.toString());//imprime los datos ingresados directamente
+                    System.out.println(".toString");
                     System.out.println("================= ");
                     System.out.println("");
                     break;
@@ -213,6 +217,7 @@ public class Principal {//clase con nombre Principal
                     System.out.println("");
                     System.out.println("================= ");
                     System.out.println(reservacion.toString());//imprime los datos ingresados  directamente
+                    System.out.println(".toString");
                     System.out.println("================= ");
                     System.out.println("");
                     break;
