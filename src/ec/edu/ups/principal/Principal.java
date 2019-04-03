@@ -17,27 +17,25 @@ public class Principal {//clase con nombre Principal
 
         Scanner sc = new Scanner(System.in);// sirve para resivir datos mediante teclado
         String s = "";
-        
+
         do {// inicio del do while para la cracion del menu
             System.out.println("              MENU                ");
-            System.out.println("1.Crear un  Cliente");
-            System.out.println("2.Crear un  Empleado");
-            System.out.println("3.Crear un  Factura");
-            System.out.println("4. Crear onjeto Menu");
-            System.out.println("5. Crear objeto Reservacion");
+            System.out.println("1.Crear Cliente");
+            System.out.println("2.Crear  Empleado");
+            System.out.println("3.Crear Factura");
+            System.out.println("4.Crear Menu");
+            System.out.println("5.Crear Reservacion");
             System.out.println("\tIngrese Opcion: ");
             int n = sc.nextInt();
             switch (n) {
                 case 1:// nos ayudara a llamar el objeto que gustemos seleccionar
-                    
+
                     // el System.out.println nos ayuda a imprimir textos 
                     System.out.println("");
                     System.out.println("Ingrese los datos del Cliente: ");
                     System.out.println("Nombre: ");
                     System.out.println("Ruc: ");
                     System.out.println("Telefono: ");
-
-                    
 
                     Scanner scn = new Scanner(System.in);// creo un objeto (instanciar Scanner) 
                     Cliente cliente = new Cliente();//creo un objeto (intanciar Cliente)
@@ -74,8 +72,6 @@ public class Principal {//clase con nombre Principal
                     System.out.println("Cedula: ");
                     System.out.println("Codigo: ");
 
-                    
-
                     Scanner sn = new Scanner(System.in);// creo un objeto (instanciar Scanner)
                     String nom = sn.nextLine();//nos permite leer un dato de tipo String
                     String sec = sn.nextLine();//nos permite leer un dato de tipo String
@@ -107,12 +103,12 @@ public class Principal {//clase con nombre Principal
                     // el System.out.println nos ayuda a imprimir textos
                     System.out.println("");
                     System.out.println("Ingrese los datos para la Factura: ");
-                    System.out.println("Ingrese los datos del Empleado: ");
+                    System.out.println("Ingrese los datos del Factura: ");
                     System.out.println("Nombre: ");
                     System.out.println("Ruc: ");
                     System.out.println("Direccion: ");
                     System.out.println("Telefono: ");
-                    System.out.println("Correo Electronico: ");
+
                     System.out.println("Numero de Factura ");
 
                     System.out.println("================= ");
@@ -128,8 +124,7 @@ public class Principal {//clase con nombre Principal
                     factura.setNombre(nomfac);//asigno valores al campo factura
                     factura.setRuc(rucfac);//asigno valores al campo factura
                     factura.setDireccion(direcfac);//asigno valores al campo factura
-                    factura.setTelefono(telefonofac);//asigno valores al campo factura
-                    factura.setCorreoElectronico(correofac);//asigno valores al campo factura
+                    factura.setTelefono(telefonofac);//asigno valores al campo factura                   
                     factura.setFecha(new Date());
                     factura.setNumeroFactura(numfac);
 
@@ -140,7 +135,6 @@ public class Principal {//clase con nombre Principal
                     System.out.println("Ruc: " + factura.getRuc());//imprime los datos ingresados 
                     System.out.println("Direccion: " + factura.getDireccion());//imprime los datos ingresados 
                     System.out.println("Telefono: " + factura.getTelefono());//imprime los datos ingresados 
-                    System.out.println("Correo Electronico: " + factura.getCorreoElectronico());//imprime los datos ingresados 
                     Date fecha = factura.getFecha();
                     System.out.println("Fecha: " + fecha);
                     System.out.println("Numero de Factura: " + factura.getNumeroFactura());//imprime los datos ingresados 
@@ -165,7 +159,7 @@ public class Principal {//clase con nombre Principal
                     Scanner snn = new Scanner(System.in);// creo un objeto (instanciar Scanner)
                     String seccion = snn.nextLine();//nos permite leer un dato de tipo String
                     String nombreplato = snn.nextLine();//nos permite leer un dato de tipo String
-                    double precio = snn.nextDouble();//nos permite leer un dato de tipo double
+                    String precio = snn.nextLine();//nos permite leer un dato de tipo double
                     menu.setSeccion(seccion);//asigno valores al campo menu
                     menu.setNombrePlato(nombreplato);//asigno valores al campo menu
                     menu.setPrecio(precio);//asigno valores al campo menu
